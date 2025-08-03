@@ -116,3 +116,11 @@ export PATH="/Users/tom/.codeium/windsurf/bin:$PATH"
 # add hostname and user to prompt
 # export PROMPT='%(!.%{%F{yellow}%}.)$USER@%{$fg[white]%}%M ${ret_status} %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
 
+
+# pnpm
+export PNPM_HOME="/Users/tomhanover/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
